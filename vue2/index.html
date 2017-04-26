@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>vue2</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Tabela do Campeonato</h1>
+      <ul>
+        <li v-for="time in times">
+          {{time.nome}}
+          <img :src="time.escudo" :alt="time.nome">
+        </li>
+      </ul>
+    </div>
+    <script src="/dist/build.js"></script>
+  </body>
+</html>
